@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.freedom.mapper.RoleInfoMapper">
+    <!--查询所有角色信息-->
+    <select id="selectAllRole" resultType="com.freedom.pojo.RoleInfo">
+        select * from roleinfo
+    </select>
+    <!--模糊查询角色信息-->
+    <select id="mhselect" parameterType="com.freedom.Vo.RoleInfoVo" resultType="com.freedom.pojo.RoleInfo">
+        select * from roleinfo
+        <where>
+            <if test="rolename!=null and rolename!=''">
+                and rolename like "%"#{rolename}"%"
+            </if>
+            <if test="shortname!=null and shortname!=''">
+                and shortname like "%"#{shortname}"%"
+            </if>
+        </where>
+
+    </select>
+
+
+</mapper>

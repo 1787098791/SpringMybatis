@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左侧菜单</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/doc.min.css">
+    <link rel="stylesheet" href="ztree/zTreeStyle.css">
+    <style>
+        .tree li {
+            list-style-type: none;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="col-sm-3 col-md-2 sidebar">
+    <div class="tree">
+        <ul style="padding-left:0px;" class="list-group">
+                <li class="list-group-item">
+                    <span><i class="glyphicon glyphicon glyphicon-tasks"></i> 权限管理 <span class="badge" style="float:right">3</span></span>
+                <ul style="margin-top:10px;">
+                    <li style="height:30px;">
+                        <a><i class="glyphicon glyphicon-user"></i> 用户维护</a>
+                    </li>
+                    <li style="height:30px;">
+                        <a href="role.html"><i class="glyphicon glyphicon-king"></i> 角色维护</a>
+                    </li>
+                    <li style="height:30px;">
+                        <a href="permission.html" style="color:red;"><i class="glyphicon glyphicon-lock"></i> 菜单管理</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="jquery/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="script/docs.min.js"></script>
+<script src="ztree/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //初始化数据
+          function selectAllMenuByUserID(){ //根据session获取用户ID
+            $.ajax({
+                type: 'post',
+                url: "selectAllMenuByUserID",
+                contentType: "application/json;charset=utf-8",
+                success: function (data){
+                    //console.log(data); //  2pm
+                    var innerHtml = "<ul style=\"padding-left:0px;\" class=\"list-group\">"+
+                        "<li class=\"list-group-item tree-closed\" >"+
+                        "<a href=\"main.html\"><i class=\"glyphicon glyphicon-dashboard\"></i> 控制面板</a></li>";
+                    //循环迭代出1级菜单
+                    $(data).each(function (index,item) {
+                        var parentName = item.name;
+                        if(index==0) {
+
+                            innerHtml += "<li  class=\"list-group-item\">"+"<span><i class=\"glyphicon glyphicon glyphicon-tasks\"></i> " + parentName + " <span class=\"badge\" style=\"float:right\">" + item.children.length + "</span></span>";
+
+                            innerHtml += "<ul style=\"margin-top:10px;\">";
+                        }else{
+                            innerHtml += "<li  class=\"list-group-item tree-closed\">" + "<span><i class=\"glyphicon glyphicon glyphicon-tasks\"></i> " + parentName + " <span class=\"badge\" style=\"float:right\">" + item.children.length + "</span></span>";
+
+                            innerHtml += "<ul style=\"margin-top:10px;display: none\">";
+                        }
+
+                        $(item.children).each(function (index,child) {
+                            innerHtml += "<li style=\"height:30px;\">"+
+                                "<a href=\"\"><i class=\"glyphicon glyphicon-user\"></i>"+child.name+"</a>"+
+                                "</li>";
+                        });
+
+                        innerHtml += "</ul>";
+                        innerHtml +=    "</li>";
+
+                    });
+                    innerHtml += "</ul>";
+                    $(".tree").empty();
+                    $(".tree").append(innerHtml);
+                    $(".list-group-item").click(function(){
+                                  if ( $(this).find("ul") ) {
+                                      $(this).toggleClass("tree-closed");
+                                      if ( $(this).hasClass("tree-closed") ) {
+                                          $("ul", this).hide("fast");
+                                      } else {
+                                          $("ul", this).show("fast");
+                                      }
+                                  }
+                              });
+
+
+                },
+                error:function (data) {
+                    console.error(data);
+                },
+                dataType: "json"
+            });
+        };
+
+        selectAllMenuByUserID();
+
+    });
+
+
+
+</script>
+</body>
+</html>
