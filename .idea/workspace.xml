@@ -7,20 +7,255 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0787002f-4437-43d7-965a-5577e423eab4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/freedom/service/MyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringMybatis.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringMybatis.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freedom/controller/RequestHeaderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freedom/controller/RequestHeaderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freedom/controller/TestAjaxController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freedom/controller/TestAjaxController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freedom/controller/ThyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freedom/controller/ThyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freedom/controller/UserInfoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freedom/controller/UserInfoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freedom/service/UserInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freedom/service/UserInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/freedom/service/imp/UserInfoServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/freedom/service/imp/UserInfoServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/RoleInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/RoleInfoMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springmvc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/assignPermission.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assignPermission.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/freedom/test/TestDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/freedom/test/TestDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/A.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/B.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/Vo/MenuInfoVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/Vo/RoleInfoVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/Vo/UserInfoVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/controller/MenuInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/controller/RequestHeaderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/controller/RoleInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/controller/TestAjaxController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/controller/TestClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/controller/TestThy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/controller/ThyController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/controller/UserInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/controller/UserListController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/dto/JDTDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/dto/RoleDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/interceptor/MyInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/mapper/MenuInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/mapper/RoleInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/mapper/UserInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/pojo/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/pojo/RoleInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/pojo/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/service/MenuInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/service/MyException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/service/RoleInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/service/UserInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/service/imp/MenuInfoServiceImp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/service/imp/RoleInfoServiceImp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/service/imp/UserInfoServiceImp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/utils/FinalMD5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/utils/HttpClientUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/com/freedom/utils/TestMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/mapper/MenuInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/mapper/RoleInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/spring-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/classes/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/commons-codec-1.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/druid-1.1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/fastjson-1.2.47.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-5.3.0.Alpha1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/httpclient-4.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/httpcore-4.4.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.8.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.8.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.8.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/mybatis-3.4.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.40.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.21.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/tomcat-el-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/tomcat-jsp-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/tomcat-servlet-api-8.5.23.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/lib/validation-api-1.1.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/accttype.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/advertisement.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/apply-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/apply-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/apply-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/apply.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/assignPermission.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/assignRole.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/auth_adv.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/auth_cert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/auth_project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/cert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/css/carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/css/doc.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/css/theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fileUpLoad.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/fontawesome4.2/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/fontawesome4.2/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/fontawesome4.2/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/fontawesome4.2/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/fontawesome4.2/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/carousel-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/carousel-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/carousel-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/p1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/p2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/p3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/p3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/pic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product_detail_body.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/product_detail_head.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/services-box1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/services-box2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/services-box3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/img/services-box4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/jquery/jquery-2.1.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/jquery/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/jquery/jquery.validate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/jquery/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/member.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/message.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/minecrowdfunding.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/param.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/pay-step-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/pay-step-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/permission.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/process.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/project_type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/projects.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/reg.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/role.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/script/back-to-top.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/script/docs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/script/echarts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/start-step-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/start-step-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/start-step-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/start-step-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/start.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/test1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/testthy.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/type.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/userlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/diy/1_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/diy/1_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/diy/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/diy/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/diy/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/diy/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/diy/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/diy/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/diy/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/diy/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/line_conn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/jquery.ztree.all-3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/Spring-Mybatis-1.0-SNAPSHOT/ztree/zTreeStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/Vo/MenuInfoVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/Vo/RoleInfoVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/Vo/UserInfoVo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/controller/MenuInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/controller/RequestHeaderController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/controller/RoleInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/controller/TestAjaxController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/controller/TestClient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/controller/TestThy.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/controller/ThyController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/controller/UserInfoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/controller/UserListController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/dto/JDTDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/dto/RoleDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/interceptor/MyInterceptor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/mapper/MenuInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/mapper/RoleInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/mapper/UserInfoMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/pojo/Person.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/pojo/RoleInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/pojo/UserInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/service/MenuInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/service/MyException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/service/RoleInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/service/UserInfoService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/service/imp/MenuInfoServiceImp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/service/imp/RoleInfoServiceImp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/service/imp/UserInfoServiceImp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/utils/FinalMD5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/utils/HttpClientUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/freedom/utils/TestMain.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/MenuInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/RoleInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mapper/UserInfoMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/rebel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring-mybatis.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/springmvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/freedom/test/TestDemo.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -314,6 +549,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="freedom" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringMybatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringMybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="freedom" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,27 +565,10 @@
               <item name="SpringMybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringMybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringMybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringMybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringMybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringMybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringMybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="freedom" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="imp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -794,7 +1021,7 @@
       <workItem from="1562138563721" duration="154000" />
       <workItem from="1564710113561" duration="6754000" />
       <workItem from="1564911821933" duration="600000" />
-      <workItem from="1565339912320" duration="305000" />
+      <workItem from="1565339912320" duration="607000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Message">
       <created>1559548486764</created>
@@ -803,7 +1030,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559548486764</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit Message 邬杰提交整个项目">
+      <created>1565340444004</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565340444004</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -839,7 +1073,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336623000" />
+    <option name="totallyTimeSpent" value="336925000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -945,7 +1179,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit Message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit Message" />
+    <MESSAGE value="Commit Message 邬杰提交整个项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit Message 邬杰提交整个项目" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jquery/jquery.validate.min.js">
