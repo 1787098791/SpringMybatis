@@ -10,6 +10,7 @@ public class ThyController {
     @RequestMapping("testthy")
     public String testThy(ModelMap map){
         map.put("a","111111");
+
         return "testthy.html";
     }
 }

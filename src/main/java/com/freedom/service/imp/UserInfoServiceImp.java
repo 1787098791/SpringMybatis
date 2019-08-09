@@ -5,10 +5,12 @@ import com.freedom.dto.JDTDto;
 import com.freedom.dto.RoleDto;
 import com.freedom.mapper.UserInfoMapper;
 import com.freedom.pojo.UserInfo;
+import com.freedom.service.MyException;
 import com.freedom.service.UserInfoService;
 import com.freedom.utils.FinalMD5;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.interceptor.TransactionAspectSupport;
 
 import java.util.List;
 
@@ -99,6 +101,8 @@ public class UserInfoServiceImp implements UserInfoService {
         //对密码加密
         userInfo.setPASSWORD(FinalMD5.getFinalMD5(userInfo.getPASSWORD()));
         int i = userInfoMapper.insertUserinfo(userInfo);
+        boolean completed = TransactionAspectSupport.currentTransactionStatus().isCompleted();
+        System.out.println(completed+"22222222");
         return i;
     }
 
@@ -129,6 +133,8 @@ public class UserInfoServiceImp implements UserInfoService {
      */
     public int deleteUserandRole(UserInfoVo userInfoVo) {
         int i = userInfoMapper.deleteUserandRole(userInfoVo);
+        boolean completed = TransactionAspectSupport.currentTransactionStatus().isCompleted();
+        System.out.println(completed+"22222222222");
         return i;
     }
 
@@ -151,5 +157,14 @@ public class UserInfoServiceImp implements UserInfoService {
     public List<UserInfo> checkName(String username) {
         List<UserInfo> userInfoList = userInfoMapper.checkName(username);
         return userInfoList;
+    }
+
+    public void test() throws MyException {
+        int i=0;
+        try {
+           i=1/0;
+        }catch (Exception e){
+            throw new MyException("异常！！！");
+        }
     }
 }

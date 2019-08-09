@@ -1,0 +1,13 @@
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<span th:text="${a}">
+        如果你看到这句话，说明thymeleaf没有生效/或者取值失败
+
+    </span>
+<input type="button" value="名字" th:onclick="'getName(\''+${user.name}+'\')'"/>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.freedom.mapper.MenuInfoMapper">
+    <resultMap id="selectJDTbyidMap" type="com.freedom.dto.JDTDto">
+       <!-- private int id;
+        private int pid;
+       // private int seqno;
+        private String name;
+        private String icon;
+        //private boolean open;
+        private boolean checked;//若数据库返回1则为true(其实为null),0为false,表示这个权限该角色有没有
+        private List<JDTDto> Children;-->
+        <id column="PMENUID" property="id"/>
+        <result column="PPARENTID" property="pid"/>
+        <result column="PMENUNAME" property="name"/>
+        <result column="PMENUICON" property="icon"/>
+        <collection property="children" ofType="com.freedom.dto.JDTDto">
+            <id column="MENUID" property="id"/>
+            <result column="PARENTID" property="pid"/>
+            <result column="MENUNAME" property="name"/>
+            <result column="MENUICON" property="icon"/>
+            <result column="checked" property="checked"/>
+        </collection>
+    </resultMap>
+<!--根据roleid查询该id的权限情况-->
+    <select id="selectJDTbyid" parameterType="int" resultMap="selectJDTbyidMap">
+SELECT rm.`ROLEID`,ISNULL(rm.`MENUID`) checked,fz.*
+FROM rolemenu rm RIGHT OUTER JOIN
+(SELECT m1.`MENUID` PMENUID,m1.`MENUNAME` PMENUNAME,m1.`MENU_URL` PMENU_URL,m1.`MENUICON` PMENUICON,m1.`PARENTID` PPARENTID,m2.* FROM  menuinfo m1,menuinfo m2 WHERE m2.`PARENTID`=m1.`MENUID`) fz
+ON
+fz.MENUID=rm.`MENUID`
+AND
+rm.`ROLEID`=#{id}
+    </select>
+<!--查询父菜单的ID-->
+    <select id="selectAllParentMenu" resultType="int">
+        SELECT menuinfo.`MENUID` FROM menuinfo WHERE parentid IS NULL
+    </select>
+    <!--根据roleid删除角色和权限菜单关系-->
+    <delete id="deleteRoleAndMenu" parameterType="int">
+        delete from rolemenu where roleid=#{id}
+
+    </delete>
+    <!--增加角色和权限菜单关系-->
+    <insert id="insertRoleAndMenu" parameterType="com.freedom.Vo.MenuInfoVo">
+      insert into rolemenu values
+      <foreach collection="menuids" item="menuid"  separator=",">
+          (null,#{roleid},#{menuid})
+      </foreach>
+    </insert>
+</mapper>

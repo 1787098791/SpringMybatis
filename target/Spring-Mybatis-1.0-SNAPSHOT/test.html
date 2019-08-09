@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <title></title>
+</head>
+<body>
+233333
+<img src="/img/carousel-1.jpg" alt="测试用">
+<button value="测试" onclick="jump()">
+    测试
+</button>
+<script>
+    function jump() {
+        var name='小明';
+        var s = encodeURI(encodeURI("小明"));
+        window.location.href = "getRequestEncode?name="+s;
+    }
+</script>
+</body>
+
+</html>

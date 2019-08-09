@@ -96,4 +96,6 @@ public interface UserInfoService {
      * @return
      */
     List<UserInfo> checkName(String username);
+
+     void test() throws MyException;
 }

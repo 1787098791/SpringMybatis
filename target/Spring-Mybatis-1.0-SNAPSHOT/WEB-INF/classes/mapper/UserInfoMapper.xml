@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.freedom.mapper.UserInfoMapper">
+    <resultMap id="selectAllMenuByUserIDMap" type="com.freedom.dto.JDTDto">
+        <!-- private int id;
+         private int pid;
+        // private int seqno;
+         private String name;
+         private String icon;
+         //private boolean open;
+         private boolean checked;//若数据库返回1则为true(其实为null),0为false,表示这个权限该角色有没有
+         private List<JDTDto> Children;-->
+        <id column="PMENUID" property="id"/>
+        <result column="PPARENTID" property="pid"/>
+        <result column="PMENUNAME" property="name"/>
+        <result column="PMENUICON" property="icon"/>
+        <collection property="children" ofType="com.freedom.dto.JDTDto">
+            <id column="MENUID" property="id"/>
+            <result column="PARENTID" property="pid"/>
+            <result column="MENUNAME" property="name"/>
+            <result column="MENUICON" property="icon"/>
+        </collection>
+    </resultMap>
+    <!--登录时查询-->
+    <select id="login" parameterType="com.freedom.Vo.UserInfoVo" resultType="com.freedom.pojo.UserInfo">
+    select * from userinfo where username=#{USERNAME} and password=#{PASSWORD}
+    </select>
+    <!--大条件下模糊查询-->
+    <select id="mhselect" parameterType="com.freedom.Vo.UserInfoVo" resultType="com.freedom.pojo.UserInfo">
+        select * from userinfo where username like #{info} or password like #{info} or regemail like #{info} or mobile like #{info} or icon like #{info}
+    </select>
+    <!--查询所有用户-->
+    <select id="selectAllUserinfo" resultType="com.freedom.pojo.UserInfo">
+        select * from userinfo
+    </select>
+    <!--根据id查用户-->
+    <select id="selectUserByID" parameterType="int" resultType="com.freedom.pojo.UserInfo">
+        select * from userinfo where userid=#{id}
+    </select>
+    <!--修改用户信息-->
+    <update id="updateUserByID" parameterType="UserInfo">
+        update userinfo set username=#{USERNAME},password=#{PASSWORD},regemail=#{REGEMAIL},mobile=#{MOBILE},icon=#{ICON} where userid=#{USERID}
+    </update>
+    <!--根据id删除用户的信息-->
+    <delete id="deleteUserByID" parameterType="int">
+        delete from userinfo where userid=#{id}
+    </delete>
+    <!--增加用户-->
+    <insert id="insertUserinfo" parameterType="com.freedom.pojo.UserInfo">
+        insert into userinfo values (null,#{USERNAME},#{PASSWORD},#{REGEMAIL},#{MOBILE},#{ICON})
+    </insert>
+    <!--根据id查询角色分配情况-->
+    <select id="selectRoleCon" parameterType="int" resultType="com.freedom.dto.RoleDto">
+     select ifnull(USERID,0) flag,r.* from user_role ur right outer join roleinfo r on ur.`ROLEID`=r.`ROLEID` and ur.`USERID`=#{id}
+    </select>
+    <!--增加用户和角色关系-->
+    <insert id="insertUserandRole" parameterType="com.freedom.Vo.UserInfoVo">
+        insert into user_role values (null,#{id},#{roleid})
+    </insert>
+    <!--删除用户和角色关系-->
+    <delete id="deleteUserandRole" parameterType="com.freedom.Vo.UserInfoVo">
+        delete from user_role where userid=#{id} and roleid=#{roleid}
+    </delete>
+    <!--根据用户信息查询该用户的所有权限菜单-->
+    <select id="selectAllMenuByUserID" parameterType="int" resultMap="selectAllMenuByUserIDMap">
+SELECT tb1.`MENUID` PMENUID,tb1.`MENUNAME` PMENUNAME,tb1.`MENU_URL` PMENU_URL,tb1.`MENUICON` PMENUICON,tb1.`PARENTID` PPARENTID,tb2.*
+FROM menuinfo tb1,(SELECT DISTINCT m.* FROM userinfo u,user_role ur,roleinfo r ,rolemenu rm,menuinfo m
+WHERE
+u.`USERID`=ur.`USERID`
+AND
+r.`ROLEID`=ur.`ROLEID`
+AND
+r.`ROLEID`=rm.`ROLEID`
+AND
+m.`MENUID`=rm.`MENUID`
+AND
+u.`USERID`=#{userid}) tb2
+WHERE
+tb2.PARENTID=tb1.`MENUID`
+    </select>
+
+    <!--注册增加用户-->
+    <insert id="regist" parameterType="com.freedom.pojo.UserInfo">
+        insert into userinfo values (null,#{USERNAME},#{PASSWORD},#{REGEMAIL},#{MOBILE},#{ICON})
+    </insert>
+    <!--用户名查重-->
+    <select id="checkName" parameterType="java.lang.String" resultType="com.freedom.pojo.UserInfo">
+        select * from userinfo where username=#{username}
+    </select>
+</mapper>

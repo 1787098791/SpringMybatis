@@ -69,11 +69,6 @@ public class RequestHeaderController {
 //        System.out.println("2:"+name);
         return name;
     }
-    @ResponseBody
-    @RequestMapping("test")
-    public Object run(){
-        return "helleo";
-    }
 
 
 

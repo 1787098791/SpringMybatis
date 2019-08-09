@@ -5,6 +5,7 @@ import com.freedom.Vo.UserInfoVo;
 import com.freedom.dto.JDTDto;
 import com.freedom.dto.RoleDto;
 import com.freedom.pojo.UserInfo;
+import com.freedom.service.MyException;
 import com.freedom.service.UserInfoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
@@ -243,5 +244,16 @@ public class UserInfoController {
         }else{
             return false;
         }
+    }
+
+    @ResponseBody
+    @RequestMapping("/testaop")
+    public String test(){
+        try {
+            userInfoService.test();
+        } catch (MyException e) {
+            System.out.println("抛出异常了！！！");
+        }
+        return "2124";
     }
 }

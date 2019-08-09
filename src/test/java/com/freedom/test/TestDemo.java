@@ -16,12 +16,24 @@ import com.freedom.service.UserInfoService;
 import com.freedom.service.imp.MenuInfoServiceImp;
 import com.freedom.service.imp.UserInfoServiceImp;
 import com.freedom.utils.FinalMD5;
+import com.freedom.utils.HttpClientUtils;
+import org.apache.http.HttpEntity;
+import org.apache.http.ParseException;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.util.EntityUtils;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
+import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -117,8 +129,24 @@ public class TestDemo {
 
     }
     @Test
-    public void test7(){
-        String finalMD5 = FinalMD5.getFinalMD5("123456");
-        System.out.println(finalMD5);
+
+        public void doGetTestOne () {
+
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        String string = JSONArray.toJSONString(list);
+        String s = HttpClientUtils.doPostJson("http://localhost:8080/freedom", string);
+        System.out.println(s);
     }
+    @Test
+    public void test7(){
+        ClassPathXmlApplicationContext classPathXmlApplicationContext = new ClassPathXmlApplicationContext("spring-mybatis.xml");
+        UserInfoServiceImp bean = (UserInfoServiceImp) classPathXmlApplicationContext.getBean(UserInfoService.class);
+        UserInfo userInfo = bean.selectUserByID(1);
+        System.out.println(userInfo);
+
+    }
+
 }
